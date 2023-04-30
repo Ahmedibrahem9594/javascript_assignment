@@ -1,4 +1,16 @@
-console.log ("%celzero %cweb %cschool",
-                "color:red; font-size:60px",
-                "color:green; font-size:60px; font-weight:bold;",
-                "background-color:blue; font-size:60px; color:white;");
+console.group("group 1");
+console.log("message one");
+console.log("message two");
+    console.groupCollapsed("child group");
+    console.log("message one");
+    console.log("message two");
+        console.groupCollapsed("grand child group");
+        console.log("message one");
+        console.log("message two");
+        console.groupEnd();
+    console.groupEnd();
+console.groupEnd();
+
+console.group("group 2");
+console.log("message one");
+console.log("message two");
