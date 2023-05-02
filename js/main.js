@@ -1,12 +1,15 @@
-let num = "10";
-// Solution One
-console.log(+num + +num); // 20
+let points = 10;
 
-// Solution Two
-console.log(+num / +num + +num + --num); // 20
+// Write Your Code Here
+++points
+++points
+++points
+console.log(points); // 13
 
-// Solution Three
-console.log(+num + true + ++num); // 20
-
-// Solution Four
-console.log(+num * true + +num); // 20
+// Write Your Code Here
+--points
+--points
+--points
+--points
+--points
+console.log(points); // 8;
