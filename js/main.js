@@ -1,5 +1,4 @@
- let a = 21;
- let b = 20;
- let con = "_" + b + "" + a + "_"
-let rep = con.repeat(3)
-console.log(`_${a}_${rep}_${b}_`); // _21_2021_2021_2021_20_
+
+// Replace ? With Arithmetic Operators
+
+console.log(((10 * 20) +  !15 + !3 + (190 + 10)) - 400)
