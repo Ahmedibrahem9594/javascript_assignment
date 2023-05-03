@@ -1,19 +1,3 @@
-console.log(-Number.MIN_SAFE_INTEGER); // 9007199254740991
-console.log(Number.MAX_SAFE_INTEGER + Number.MIN_SAFE_INTEGER + 
-true + 
-true + 
-true + 
-true + 
-true + 
-true + 
-true + 
-true + 
-true + 
-true + 
-true + 
-true + 
-true +
-true +
-true +
-true
-); // 16
+let myVar = "100.56789 Views";
+console.log(Number(myVar.substring(0,3))); // 100
+console.log((Number(myVar.substring(0,5))) + 0.07); // 100.57
