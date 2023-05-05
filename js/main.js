@@ -1,7 +1,14 @@
-let a = 20;
-let b = 30;
-let c = 10;
+// Test Case 1
+let num = 9; // "009"
+// Test Case 2
+let num = 20; // "020"
+// Test Case 3
+let num = 110; // "110"
 
-console.log(a < b && a > c || a < b); // true
-console.log(a != b != a != c); // true
-console.log(!(a == b) && !(a == b) && !(a == c) && !(a == c)); // true
+if (num < 10) {
+    console.log(`00${num}`);
+} else if (num > 10 && num < 100) {
+    console.log(`0${num}`);
+} else if (num >= 100) {
+    console.log(`${num}`);
+}
