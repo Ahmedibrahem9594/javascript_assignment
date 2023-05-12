@@ -1,15 +1,10 @@
-let needle = "JS";
-let haystack = ["PHP", "JS", "Python"];
+let arr1 = ["A", "C", "X"];
+let arr2 = ["D", "E", "F", "Y"];
+let allArrs = [];
 
-// Write 3 Solutions
-if (haystack.includes(needle)) {
-  console.log("founded");
-}
-if (haystack[1] == needle ) {
-  console.log("founded");
-}
-haystack.shift();
-haystack.pop()
-if (haystack == needle ) {
-  console.log("founded");
-}
+// Your Code Here
+let xx = arr1.pop();
+let yy = arr2.pop();
+let ff = arr2.pop();
+allArrs = xx.toLowerCase()+ff.toLowerCase()+yy.toLowerCase();
+console.log(allArrs); // fxy
