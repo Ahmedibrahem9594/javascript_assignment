@@ -1,4 +1,15 @@
-let website = "Go";
-let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
+let needle = "JS";
+let haystack = ["PHP", "JS", "Python"];
 
-console.log(words[website.length][0].slice(2).toUpperCase()); // ZERO
+// Write 3 Solutions
+if (haystack.includes(needle)) {
+  console.log("founded");
+}
+if (haystack[1] == needle ) {
+  console.log("founded");
+}
+haystack.shift();
+haystack.pop()
+if (haystack == needle ) {
+  console.log("founded");
+}
