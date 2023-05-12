@@ -1,15 +1,16 @@
-let index = 10;
-let jump = 2;
-for (;;) {
-  for ( i = index ; i >= (jump + jump) ; i = i - 2 ) {
-    console.log(i);
+let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+let letter = "a";
+let y = letter.length
+for ( i = letter.indexOf("a") ; i < friends.length ; i++) {
+  if (friends[i].toLowerCase().startsWith(letter)) {
+    continue;
   }
-  if (i = (jump + jump) ) {
-    break;
-  }
+  console.log(` ${y} =>  ${friends[i]}`);
+  y++
 }
-// // Output
-// 10
-// 8
-// 6
-// 4
+// Output
+// "1 => Sayed"
+// "2 => Eman"
+// "3 => Mahmoud"
+// "4 => Osama"
+// "5 => Sameh"
