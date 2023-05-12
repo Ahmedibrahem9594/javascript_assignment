@@ -1,72 +1,17 @@
-let day = "   friday  ";
-// You Need To Remove Spaces And Make First Letter Capital => Friday
-switch (day.trim()) {
-  case "friday":
-    console.log("not available in friday ");
-    break;
-  case "saturday":
-    console.log("not available in saturday ");
-    break;
-  case "sunday":
-    console.log("not available in sunday ");
-    break;
-    default :
-    console.log("Available");
+let st = "Elzero Web School";
+
+if (st.charAt(st.toLowerCase().indexOf("w")).toLowerCase() === "w") {
+  console.log("Good");
 }
-// let day = "Friday";
-// let day = "Saturday";
-// let day = "Sunday";
-// // Output => "No Appointments Available"
-switch (day.trim()) {
-  case "friday":
-    console.log("not available in friday ");
-    break;
-  case "saturday":
-    console.log("not available in saturday ");
-    break;
-  case "sunday":
-    console.log("not available in sunday ");
-    break;
-    default :
-    console.log("Available");
+
+if (st.charAt(st.toLowerCase().indexOf("w")).toLowerCase() !== "string") {
+  console.log("Good");
 }
-// let day = "Monday";
-// let day = "Thursday";
-// // Output => "From 10:00 AM To 5:00 PM"
-switch (day.trim()) {
-  case "monday":
-    console.log("From 10:00 AM To 5:00 PM ");
-    break;
-  case "thursday":
-    console.log("From 10:00 AM To 5:00 PM ");
-    break;
-    default :
-    console.log("not available in specific day");
+
+if (typeof st.length === "number") {
+  console.log("Good");
 }
-// let day = "Tuesday";
-// // Output => "From 10:00 AM To 6:00 PM"
-switch (day.trim()) {
-  case "tuesday":
-    console.log("From 10:00 AM To 5:00 PM ");
-    break;
-    default :
-    console.log("not available in specific day");
-}
-// let day = "Wednesday";
-// // Output => "From 10:00 AM To 7:00 PM"
-switch (day.trim()) {
-  case "wednesday":
-    console.log("From 10:00 AM To 5:00 PM ");
-    break;
-    default :
-    console.log("not available in specific day");
-}
-// let day = "World";
-// // Output => "Its Not A Valid Day"
-switch (day.trim()) {
-  case "wednesday":
-    console.log("From 10:00 AM To 5:00 PM ");
-    break;
-    default :
-    console.log("Its Not A Valid Day");
+
+if ( st.split(" ")[0].repeat(2) === "ElzeroElzero") {
+  console.log("Good");
 }
