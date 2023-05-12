@@ -7,6 +7,6 @@ console.log(my); // ["Osama", "Elham", "Mazero", "Ahmed"];
 //solution two
 console.log(my.slice(++zero,counter).reverse()); // ["Elham", "Mazero"]
 // solution three
-console.log(my[2].substring(0,2) + my[1].slice(2)); // "Elzero"
+console.log(my[--counter].substring(zero,counter) + my[--counter].slice(++counter)); // "Elzero"
 // solution four
-console.log(my[5].slice(4)+my[1].slice(5).toUpperCase()); // "rO"
+console.log(my[(++counter + true)].slice(counter)+my[++zero].slice(++counter).toUpperCase()); // "rO"
