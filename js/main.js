@@ -1,68 +1,72 @@
-// Edit What You Want Here
-
-let num1 = 10;
-let num2 = -9;
-let num3 = 10;
-let num4 = 50;
-
-/*
-  Do Not Edit Below This Line
-  Needed Output
-  True 7 Times
-*/
-
-// Condition 1
-
-if (num1 > num2) {
-  console.log("True");
-} else {
-  console.log("False");
+let day = "   friday  ";
+// You Need To Remove Spaces And Make First Letter Capital => Friday
+switch (day.trim()) {
+  case "friday":
+    console.log("not available in friday ");
+    break;
+  case "saturday":
+    console.log("not available in saturday ");
+    break;
+  case "sunday":
+    console.log("not available in sunday ");
+    break;
+    default :
+    console.log("Available");
 }
-
-// Condition 2
-
-if (num1 > num2 && num1 < num4) {
-  console.log("True");
-} else {
-  console.log("False");
+// let day = "Friday";
+// let day = "Saturday";
+// let day = "Sunday";
+// // Output => "No Appointments Available"
+switch (day.trim()) {
+  case "friday":
+    console.log("not available in friday ");
+    break;
+  case "saturday":
+    console.log("not available in saturday ");
+    break;
+  case "sunday":
+    console.log("not available in sunday ");
+    break;
+    default :
+    console.log("Available");
 }
-
-// Condition 3
-
-if (num1 > num2 && num1 === num3) {
-  console.log("True");
-} else {
-  console.log("False");
+// let day = "Monday";
+// let day = "Thursday";
+// // Output => "From 10:00 AM To 5:00 PM"
+switch (day.trim()) {
+  case "monday":
+    console.log("From 10:00 AM To 5:00 PM ");
+    break;
+  case "thursday":
+    console.log("From 10:00 AM To 5:00 PM ");
+    break;
+    default :
+    console.log("not available in specific day");
 }
-
-// Condition 4
-
-if ((num1 + num2) < num4) {
-  console.log("True");
-} else {
-  console.log("False");
+// let day = "Tuesday";
+// // Output => "From 10:00 AM To 6:00 PM"
+switch (day.trim()) {
+  case "tuesday":
+    console.log("From 10:00 AM To 5:00 PM ");
+    break;
+    default :
+    console.log("not available in specific day");
 }
-
-// Condition 5
-
-if ((num1 + num3) < num4) {
-  console.log("True");
-} else {
-  console.log("False");
+// let day = "Wednesday";
+// // Output => "From 10:00 AM To 7:00 PM"
+switch (day.trim()) {
+  case "wednesday":
+    console.log("From 10:00 AM To 5:00 PM ");
+    break;
+    default :
+    console.log("not available in specific day");
 }
-
-// Condition 6
-
-if ((num1 + num2 + num3) < num4) {
-  console.log("True");
-} else {
-  console.log("False");
-}
-
-// Condition 7
-
-if (num4 - (num1 + num3) + num2 === 21) {
-  console.log("True");
-} else {
-  console.log("False");
+// let day = "World";
+// // Output => "Its Not A Valid Day"
+switch (day.trim()) {
+  case "wednesday":
+    console.log("From 10:00 AM To 5:00 PM ");
+    break;
+    default :
+    console.log("Its Not A Valid Day");
 }
