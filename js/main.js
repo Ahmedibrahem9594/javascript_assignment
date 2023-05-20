@@ -1,13 +1,12 @@
 let start = 0;
-let swappedName = "elZerO";
-let newArr = []
-// Output
-// "ELzERo"
-for (let i = start; i < swappedName.length; i++) {
-    if (swappedName[i] === swappedName[i].toUpperCase()) {
-        newArr.push(swappedName[i].toLowerCase());
-    } else {
-        newArr.push(swappedName[i].toUpperCase());
+let mix = [1, 2, 3, "A", "B", "C", 4];
+
+// // Output
+// 2
+// 3
+// 4
+for (let i = ++start; i < mix.length; i++) {
+    if (Number.isInteger(mix[i])) {
+        console.log(`${mix[i]}`);
     }
 }
-console.log(newArr.join(""));
