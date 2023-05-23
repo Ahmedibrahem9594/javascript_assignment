@@ -1,17 +1,17 @@
-function getDetails(zName,zAge,zCountry) {
-    function namePattern(zName) {
-        return (`${zName.split(" ")[0].toUpperCase()} ${zName.split(" ")[1].charAt(0).toUpperCase()}.`)
-    }
-    function ageWithMessage(zAge) {
-        return (`${zAge.split(" ")[0]}`);
-    }
-    function countryTwoLetters(zCountry) {
-        return (`${zCountry.substring(0,2).toUpperCase()}`)
-    }
-    function fullDetails() {
-        return ("Hello " +  namePattern(zName) + ", Your age is " + ageWithMessage(zAge) + ", You Live in "  + countryTwoLetters(zCountry) );
-    }
-    return fullDetails()
+// function itsMe() {
+//   return `Iam A Normal Function`;
+// }
+
+let itsMe = () => `Iam A Normal Function`;
+
+console.log(itsMe()); // Iam A Normal Function
+
+// function urlCreate(protocol, web, tld) {
+//   return `${protocol}://www.${web}.${tld}`;
+// }
+
+let  urlCreate = (protocol, web, tld) => {
+  return `${protocol}://www.${web}.${tld}`;
 }
-console.log(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
-console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
+
+console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
