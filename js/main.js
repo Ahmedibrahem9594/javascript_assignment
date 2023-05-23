@@ -1,8 +1,17 @@
-function createSelectBox(startYear, endYear) {
-        document.write(`<select>`);
-        for (let i = startYear; i < endYear ; i++) {
-                document.write(`<Option value = "${i}"> ${i} </Option>`);
-        }
-        document.write(`</select>`);
+function getDetails(zName,zAge,zCountry) {
+    function namePattern(zName) {
+        return (`${zName.split(" ")[0].toUpperCase()} ${zName.split(" ")[1].charAt(0).toUpperCase()}.`)
+    }
+    function ageWithMessage(zAge) {
+        return (`${zAge.split(" ")[0]}`);
+    }
+    function countryTwoLetters(zCountry) {
+        return (`${zCountry.substring(0,2).toUpperCase()}`)
+    }
+    function fullDetails() {
+        return ("Hello " +  namePattern(zName) + ", Your age is " + ageWithMessage(zAge) + ", You Live in "  + countryTwoLetters(zCountry) );
+    }
+    return fullDetails()
 }
-createSelectBox(2000, 2021);
+console.log(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
+console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
