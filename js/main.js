@@ -1,8 +1,8 @@
-let myString = "EElllzzzzzzzeroo";
-let newMyString = myString.split("").filter(function (ele, indx) {
-    return myString.indexOf(ele) === indx;
-}).reduce(function (acc, curr) {
+let myArray = ["E", "l", "z", ["e", "r"], "o"];
+let newArray = myArray.reduce(function (acc, curr) {
     return `${acc}${curr}`
-});
-console.log(newMyString);
+}).split("").map(function (el) {
+    return el != "," ? el : "";
+}).join("")
+console.log(newArray);
 // Elzero
