@@ -1,8 +1,6 @@
-let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
-let newNums =  numsAndStrings.filter(function (ele) {
-    return !isNaN(parseInt(ele));
-}).map(function (ele) {
-    return -ele;
-}).join(" ").split(" ")
-console.log(newNums)
-// [-1, -10, 10, 20, -5, -3]
+let nums = [2, 12, 11, 5, 10, 1, 99];
+let newNums = nums.reduce(function (acc, curr) {
+    return curr % 2 === 0 ? curr * acc : curr + acc ;
+},1)
+console.log(newNums);
+// 500
