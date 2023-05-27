@@ -1,8 +1,8 @@
-let mix = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
-let newMix = mix.map(function (ele) {
-    return isNaN(parseInt(ele)) ? ele : "";
-}).reduce(function (ac,cur) {
-    return `${ac}${cur}`
-})
-console.log(newMix);
+let myString = "EElllzzzzzzzeroo";
+let newMyString = myString.split("").filter(function (ele, indx) {
+    return myString.indexOf(ele) === indx;
+}).reduce(function (acc, curr) {
+    return `${acc}${curr}`
+});
+console.log(newMyString);
 // Elzero
