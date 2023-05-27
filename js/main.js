@@ -1,15 +1,25 @@
+// Method One
 // Create Your Object Here
-let member = {
-    name : "Elzero",
-    age : 38,
-    country : "Egypt",
-    fullDetails : function () {
-        return `My name is Elzero  , my age is 38, i live in egypt`;
-    },
-};
+let objMethodOne = {
 
-console.log(member.name); // Elzero
-console.log(member.age); // 38
-console.log(member.country); // Egypt
-console.log(member.fullDetails());
-// My Name Is Elzero, My Age Is 38, I Live in Egypt
+}
+console.log(objMethodOne.property); // "Method One"
+
+// Method Two
+// Create Your Object Here
+let objMethodTwo = new Object({
+
+});
+console.log(objMethodTwo.property); // "Method Two"
+
+// Method Three
+// Create Your Object Here
+let objMethodThree = Object.create({
+
+});
+console.log(objMethodThree.property); // "Method Three"
+
+// Method Four
+// Create Your Object Here
+let objMethodFour = Object.assign(objMethodOne,objMethodTwo,objMethodThree);
+console.log(objMethodFour.property); // "Method Four"
