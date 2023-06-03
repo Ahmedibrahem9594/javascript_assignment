@@ -1,34 +1,20 @@
-let addClass = document.querySelectorAll("input")[0];
-let removeClass = document.querySelectorAll("input")[1];
-let divTo = document.querySelector(".assign .classes-list div");
-
-//add class 
-addClass.addEventListener("blur",function(e) {
-    let classValue = addClass.value;
-    if(classValue != "") {
-        classValue.split(" ").forEach(function(el) {
-            let addSpan = document.createElement("span");
-            addSpan.textContent = el;
-            divTo.appendChild(addSpan);
-            addClass.value = "";
-        })
-    } else {
-        return false;
-    }
-})
-//remove class 
-removeClass.addEventListener("blur",function(ev) {
-    let newRemoveClassValue = removeClass.value.split(" ");
-    divToSpan = divTo.querySelectorAll("span")
-    newArray =  Array.from(divToSpan).map(function(s) {
-        return s;
-    })
-    for (i = 0 ; i < newRemoveClassValue.length ; i++) {
-        console.log();
-        console.log(newRemoveClassValue[i]);
-        if (newArray[i].textContent.toLowerCase() === newRemoveClassValue[i].toLowerCase()) {
-            newArray[i].remove();
-            removeClass.value = "";
-        }
-    }
-})
+//First Div
+let firstElement = document.querySelector(".our-element");
+firstElement.className = "start";
+firstElement.setAttribute("title","Start element");
+firstElement.setAttribute("data-value","Start");
+firstElement.innerHTML = "Start";
+//Remove p
+document.querySelector("p").remove();
+//Second Div 
+let secondElement = document.createElement("div");
+secondElement.className = "our-element";
+secondElement.innerHTML = secondElement.className;
+document.body.querySelector(".start").after(secondElement)
+//Third Div
+let thirdElement = document.createElement("div");
+thirdElement.className = "end";
+thirdElement.setAttribute("title","end element");
+thirdElement.setAttribute("data-value","end");
+thirdElement.innerHTML = "end";
+document.body.querySelector(".our-element").after(thirdElement)
