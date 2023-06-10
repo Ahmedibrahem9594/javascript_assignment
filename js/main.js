@@ -5,5 +5,6 @@ let intervalCounter =  setInterval(function() {
     document.body.appendChild(myDivCounter);
     myDivCounter.innerHTML = counter;
     counter -= 1; 
-    counter < 0 ? window.open("https://elzero.org/") && clearInterval(intervalCounter) : "";
+    counter === 5  ? window.open("https://elzero.org/","_blank","width=300, height=300, left=0, top=0"): "";
+    counter < 0 ? clearInterval(intervalCounter) : "";
 },1000);
