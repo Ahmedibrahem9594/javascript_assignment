@@ -1,10 +1,17 @@
-let myDivCounter = document.createElement("div");
-let counter = 10;
-
-let intervalCounter =  setInterval(function() {
-    document.body.appendChild(myDivCounter);
-    myDivCounter.innerHTML = counter;
-    counter -= 1; 
-    counter === 5  ? window.open("https://elzero.org/","_blank","width=300, height=300, left=0, top=0"): "";
-    counter < 0 ? clearInterval(intervalCounter) : "";
-},1000);
+// let myDiv = document.getElementById("elzero");
+// let myDiv = document.getElementsByName("js");
+// let myDiv = document.getElementsByClassName("element");
+// let myDiv = document.getElementsByTagName("div");
+// let myDiv = document.querySelector("#elzero");
+// let myDiv = document.querySelector(".element");
+// let myDiv = document.querySelector("div");
+// let myDiv = document.querySelectorAll("div");
+// let myDiv = document.querySelectorAll("#elzero");
+// let myDiv = document.querySelectorAll(".element");
+// let myDiv = document.body.firstElementChild
+// let myDiv = document.body.lastElementChild.previousElementSibling
+// let myDiv = document.body.firstChild.nextSibling
+// let myDiv = document.body.firstChild.nextSibling
+// let myDiv = document.querySelector("[name = js]");
+// let myDiv = document.querySelectorAll("[name = js]");
+console.log(myDiv[0]);
