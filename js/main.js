@@ -1,12 +1,18 @@
-let arr1 = ["Ahmed", "Sameh", "Sayed"];
-let arr2 = ["Mohamed", "Gamal", "Amir"];
-let arr3 = ["Haytham", "Shady", "Mahmoud"];
+const member = {
+    age: 30,
+    working: false,
+    country: "Egypt",
+    hobbies: ["Reading", "Swimming", "Programming"],
+};
 
-// Play With Arrays To Prepare For Destructuring
-let newArr = arr1.concat(arr2).concat(arr3)
-// Write Your Destructuring Assignment Here
-let [c, , , , , , , a, b] = newArr;
+  // Write Your Destructuring Assignment Here
+let {age:a, working:w, country:c, hobbies:[h1,h2,h3]} = member
 
-console.log(`My Best Friends: ${a}, ${b}, ${c}`);
+console.log(`My Age Is ${a} And Iam ${w ? "" : "Not"} Working`);
+  // My Age Is 30 And Iam Not Working
 
-// My Best Friends: Shady, Mahmoud, Ahmed
+console.log(`I Live in ${c}`);
+  // I Live in Egypt
+
+console.log(`My Hobbies: ${h1} And ${h3}`);
+  // My Hobbies: Reading And Programming
