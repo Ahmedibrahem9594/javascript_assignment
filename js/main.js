@@ -1,4 +1,12 @@
-const myInput = document.querySelector("input[type = number]");
-const myDiv = document.querySelector(".result");
-
-myInput.addEventListener("change",(e) => myDiv.innerHTML = `${e.target.value} USD Dollar = ${(e.target.value * 15.6).toFixed(2)} Egyptian Pound`);
+const divOne = document.querySelector(".one");
+const divTwo = document.querySelector(".two");
+const divOneAttr = divOne.getAttribute("title");
+const divTwoAttr = divTwo.getAttribute("title");
+const divOneText = divOne.innerHTML
+const divTwoText = divTwo.innerHTML
+//change attr 
+divOne.setAttribute("title",divTwoAttr);
+divTwo.setAttribute("title",divOneAttr);
+//change inner html
+divOne.innerHTML = divTwoText
+divTwo.innerHTML = `${divOneText} ${document.getElementsByTagName("div").length}`
