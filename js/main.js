@@ -1,39 +1,8 @@
-let chosen = 2;
+// Needed Output
+let setOfNumbers = new Set().add(10);
 
-let myFriends = [
-  { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
-  { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
-  { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
-];
-
-// Write Your Code Here
-
-let {skills:[,s]} = myFriends[chosen-1]
-
-let {title:t, age:g, available:v} = myFriends[chosen-1] ;
-
-console.log(t)
-console.log(g)
-console.log(v === true ? "available": "Not Available")
-console.log(s)
-
-// If chosen === 1
-
-"Osama"
-39
-"Available"
-"CSS"
-
-// If chosen === 2
-
-"Ahmed"
-25
-"Not Available"
-"Django"
-
-// If chosen === 3
-
-"Sayed"
-33
-"Available"
-"Laravel"
+setOfNumbers.add(20).add(setOfNumbers.size)
+console.log(setOfNumbers);
+console.log(Array.from(setOfNumbers).indexOf(2)) 
+// Set(3) {10, 20, 2}
+// 2
