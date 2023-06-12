@@ -1,16 +1,9 @@
-let chars = ["A", "B", "C", "D", "E", 10, 15, 6];
-let arr = [];
-let bArr = [];
+let numsOne = [1, 2, 3];
+let numsTwo = [4, 5, 6];
+console.log(numsOne.concat(numsTwo))
+console.log([...numsOne,...numsTwo])
+console.log([].concat(numsOne).concat(numsTwo))
+console.log(Array.from(numsOne.concat(numsTwo)))
 
-chars.forEach((e) => {
-    if(isNaN(parseInt(e))) {
-        arr.push(e);
-    } else {
-        bArr.push(e);
-    }
-})
-let  newArr = arr.concat(bArr);
-newArr.copyWithin(bArr.length);
-console.log(newArr)
 // Needed Output
-// ['A', 'B', 'C', 'A', 'B', 'C', 'D', 'E']
+// [1, 2, 3, 4, 5, 6];
