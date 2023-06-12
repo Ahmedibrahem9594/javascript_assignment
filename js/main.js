@@ -1,8 +1,5 @@
+let myFriends = ["Osama", "Ahmed", "Sayed", "Sayed", "Mahmoud", "Osama"];
+let newSetName = new Set(myFriends);
+console.log((newSetName.size), (Array.from(newSetName).sort()))
 // Needed Output
-let setOfNumbers = new Set().add(10);
-
-setOfNumbers.add(20).add(setOfNumbers.size)
-console.log(setOfNumbers);
-console.log(Array.from(setOfNumbers).indexOf(2)) 
-// Set(3) {10, 20, 2}
-// 2
+// (4) ['Ahmed', 'Mahmoud', 'Osama', 'Sayed']
