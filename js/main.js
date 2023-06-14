@@ -1,3 +1,5 @@
-let ip = "2001:db8:3333:4444:5555:6666:7777:8888";
-let regExp = /\d{4}:[a-z]{2}\d:\d{4}:\d{4}:\d{4}:\d{4}:\d{4}:\d{4}/ig;
-console.log(regExp.test(ip));
+let specialNames = "Os10O OsO Os100O Osa100O Os1000 Os100m";
+let regExp = /(os)(\d+)?o/ig;
+console.log(specialNames.match(regExp));
+// Output
+// ['Os10O', 'OsO', 'Os100O']
