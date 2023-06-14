@@ -1,3 +1,6 @@
-let phone = "+(995)-123 (4567)";
-let regExp = /\+\((\d{3})\)-\d{3}\s\(\d{4}\)/ig
-console.log(phone.match(regExp))
+let re = /https?:\/\/(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?\/?.*/i;
+// https? => it is optional to contains https
+// \/\/(? => it is // and it optional
+// [-\w]+ => it words litters and uncountable
+// * => match zero or more
+// / => it is escaped character
