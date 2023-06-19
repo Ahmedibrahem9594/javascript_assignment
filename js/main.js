@@ -1,13 +1,30 @@
-let url1 = 'elzero.org';
-let url2 = 'http://elzero.org';
-let url3 = 'https://elzero.org';
-let url4 = 'https://www.elzero.org';
-let url5 = 'https://www.elzero.org:8080/articles.php?id=100&cat=topics';
+// function Car(name, model, price) {
+//     this.n = name;
+//     this.m = model;
+//     this.p = price;
+// }
 
-let re = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/ig
+//convert class syntax
+class Car {
+    constructor (name, model, price) {
+        this.n = name;
+        this.m = model;
+        this.p = price;
+    }
+    run() {
+        return ("Car Is Running Now");
+    }
+    stop() {
+        return (" Car Is Stopped");
+    }
+    info() {
+        return (`Car One Name Is ${this.n} And Model IS ${this.m} And Price IS ${this.p}`);
+    }
+}
 
-console.log(url1.match(re));
-console.log(url2.match(re));
-console.log(url3.match(re));
-console.log(url4.match(re));
-console.log(url5.match(re));
+let car1 = new Car("MG","2022","420000");
+console.log(car1.info());
+console.log(car1.run());
+// Needed Output
+//"Car One Name Is MG And Model Is 2022 And Price Is 420000"
+//"Car Is Running Now"
