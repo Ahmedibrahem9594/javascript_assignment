@@ -1,34 +1,32 @@
-class Phone {
-    constructor(name, serial, price) {
-      this.name = name;
-      this.serial = serial;
-      this.price = price;
+// Edit The Class
+class User {
+  #u;
+  #c;
+    constructor(username, card) {
+      this.#u = username;
+      this.#c = card;
     }
+    get showData() {
+        const originalString = this.#c.toString();
+        const chunks = originalString.match(/[^-]{1,4}/g);
+        const convertedString = chunks.join("-");
+        return `Hello ${this.#u} Your Credit Card Number Is ${convertedString}`
   }
-  
-  // Write Tablet Class Here
-class Tablet extends Phone {
-    constructor(name, serial, price, size = "Unknown") {
-        super(name, serial, price);
-        this.size = size;
-    }
-    fullDetails() {
-        return `${this.name} serial is ${this.serial} and size is ${this.size}`;
-    }
 }
-
-
-
+  // Do Not Edit Anything Below
   
-  let TabletOne = new Tablet("iPad", 100200300, 1500, 12.9);
-  let TabletTwo = new Tablet("Nokia", 350450650, 800, 10.5);
-  let TabletThree = new Tablet("LG", 250450650, 650);
+  let userOne = new User("Osama", "1234-5678-1234-5678");
+  let userTwo = new User("Ahmed", "1234567812345678");
+  let userThree = new User("Ghareeb", 1234567812345678);
   
-  console.log(`${TabletOne.fullDetails()}`);
-  // iPad Serial is 100200300 And Size Is 12.9
+  console.log(userOne.showData);
+  // Hello Osama Your Credit Card Number Is 1234-5678-1234-5678
   
-  console.log(`${TabletTwo.fullDetails()}`);
-  // Nokia Serial is 350450650 And Size Is 10.5
+  console.log(userTwo.showData);
+  // Hello Ahmed Your Credit Card Number Is 1234-5678-1234-5678
   
-  console.log(`${TabletThree.fullDetails()}`);
-  // LG Serial is 250450650 And Size Is Unknown
+  console.log(userThree.showData);
+  // Hello Ghareeb Your Credit Card Number Is 1234-5678-1234-5678
+  
+  console.log(userOne.c); // Prevent Accessing To Card Property Here
+  // Undefined
