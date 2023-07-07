@@ -1,44 +1,29 @@
-const myObj = {
-  username: "elzero",
-  id: 100,
-  score: 1000,
-  country: "Egypt",
-};
+let birthDate = new Date("5-9-1994");
+let currentDate = new Date();
 
-//Code
+let diff = currentDate.getTime() - birthDate.getTime();
 
-// configurable: true
-// enumerable: true
-// value: "elzero"
-// writable: true
-
-Object.defineProperty(myObj, "id", {
-enumerable: false,
-});
-
-Object.defineProperty(myObj, "country", {
-  enumerable: false,
-  writable:false,
-  configurable:true,
-});
-
-Object.defineProperty(myObj, "score", {
-  configurable: false,
-});
-
-delete myObj.country;
+let ageSeconds =  diff/1000;
+console.log(ageSeconds, "Seconds");
+console.log("#".repeat(50));
+let ageMinutes =  ageSeconds/60;
+console.log(ageMinutes, "Minutes");
+console.log("#".repeat(50));
+let ageDays =  ageMinutes/60;
+console.log(ageDays, "Days");
+console.log("#".repeat(50));
+let ageMonths =  ageDays/24;
+console.log(ageMonths, "Months");
+console.log("#".repeat(50));
+let ageYears = ageMonths/365;
+console.log(ageYears, "Years");
 
 
-myObj.score = 500;
 
-for (let prop in myObj) {
-  console.log(`${prop} => ${myObj[prop]}`);
-};
-
-console.log(myObj);
-
-//needed output
-
-// "username => elzero"
-// "score => 1000"
-// {username: "elzero", score:1000, id:100}
+// Needed Output
+"1247939400 Seconds"
+"20798990 Minutes"
+"346650 Hours"
+"14444 Days"
+"481 Months"
+"40 Years"
