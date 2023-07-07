@@ -1,11 +1,14 @@
-let newDate = new Date();
-
-
-console.log(new Date(newDate.setDate(-30)));
-console.log(`Previous Month Is April And Last Day IS ${new Date(newDate.setDate(-30)).getDate()}`)
+console.log(new Date("10-25-1982"));
+console.log(new Date(1982,9,25));
+let lastDate = new Date();
+lastDate.setDate(25);
+lastDate.setMonth(9);
+lastDate.setFullYear(1982)
+console.log(lastDate);
 
 
 // Needed Output
-"Sat Apr 30 2022 18:13:20 GMT+0200 (Eastern European Standard Time)"
-"Previous Month Is April And Last Day Is 30"
 
+"Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
+"Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
+"Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
