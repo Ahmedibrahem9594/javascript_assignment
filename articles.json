@@ -1,0 +1,36 @@
+[
+    {   "article_id": "#01",
+        "author": "malik ahmed",
+        "section": "accounting",
+        "article_title": "Principle of accounting",
+        "article_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perspiciatis modi harum quia animi asperiores sint rem illum officiis ut consequatur, porro soluta consequuntur ullam, nesciunt veritatis odio fuga. Eius."
+    },
+    {
+        "article_id": "#02",
+        "author": "malik ahmed",
+        "section": "economic",
+        "article_title": "Principle of economic",
+        "article_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perspiciatis modi harum quia animi asperiores sint rem illum officiis ut consequatur, porro soluta consequuntur ullam, nesciunt veritatis odio fuga. Eius."
+    },
+    {
+        "article_id": "#03",
+        "author": "malik ahmed",
+        "section": "management",
+        "article_title": "Principle of management",
+        "article_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perspiciatis modi harum quia animi asperiores sint rem illum officiis ut consequatur, porro soluta consequuntur ullam, nesciunt veritatis odio fuga. Eius."
+    },
+    {
+        "article_id": "#04",
+        "author": "malik ahmed",
+        "section": "insurance",
+        "article_title": "Principle of insurance",
+        "article_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perspiciatis modi harum quia animi asperiores sint rem illum officiis ut consequatur, porro soluta consequuntur ullam, nesciunt veritatis odio fuga. Eius."
+    },
+    {
+        "article_id": "#05",
+        "author": "malik ahmed",
+        "section": "statistics",
+        "article_title": "Principle of statistics",
+        "article_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perspiciatis modi harum quia animi asperiores sint rem illum officiis ut consequatur, porro soluta consequuntur ullam, nesciunt veritatis odio fuga. Eius."
+    }
+  ]
